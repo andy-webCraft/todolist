@@ -1,0 +1,14 @@
+.form {
+  width: 100%;
+  position: relative;
+  & input {
+    width: 100%;
+    background-color: inherit;
+    padding-right: 30px;
+  }
+}
+.addListBtn {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 0px;
+}

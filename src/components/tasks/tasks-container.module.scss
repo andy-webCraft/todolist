@@ -1,0 +1,43 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+}
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  transition: 0.4s ease-in-out;
+  &.active {
+    width: 70%;
+  }
+}
+.title {
+  font-size: 22px;
+  color: #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  padding: 0 10px 4px 10px;
+  margin-bottom: 20px;
+}
+.list {
+  margin-bottom: 20px;
+  transition: 0.2s ease-in-out;
+  & > span {
+    color: #eeeeee;
+  }
+  &.disable {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+.addTask {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: auto;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background-color: #f7f7f7;
+  }
+}

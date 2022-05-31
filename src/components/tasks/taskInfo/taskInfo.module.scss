@@ -1,0 +1,28 @@
+.wrapper {
+  width: 0;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  transition: 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  &.active {
+    width: 30%;
+    border-left: 2px solid #00000030;
+    padding: 70px 20px 40px 20px;
+    opacity: 1;
+  }
+}
+.list {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 10px;
+  & li {
+    margin-bottom: 10px;
+  }
+}
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in-out;
+  &.active {
+    background-color: #f7f7f7;
+  }
+  &:hover {
+    background-color: #f7f7f7;
+    & .actions {
+      opacity: 1;
+    }
+  }
+}
+.title {
+  width: 100%;
+  cursor: pointer;
+}
+.actions {
+  display: flex;
+  margin-left: auto;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+  & button {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.editForm {
+  width: 100%;
+  display: flex;
+  & input {
+    background: transparent;
+  }
+}
+.editBtn {
+  margin-right: 10px;
+}
