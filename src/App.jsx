@@ -1,21 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import "./App.scss";
-import { initializedToogle } from './redux/reducers/app-reducer';
-import { getTodoListsThunk } from './redux/reducers/todo-reducer';
+import ShowError from './components/common/showError/showError';
+import Content from './components/content/content';
 
-const App = ({ getTodoListsThunk, initializedToogle }) => {
+
+const App = ({ error }) => {
   return (
-    <div className="App">
-      <button onClick={() => initializedToogle()} >init</button>
-      <button onClick={() => getTodoListsThunk()} >get</button>
+    <div className="app">
+      <ShowError error={error} />
+      <Content />
     </div>
   )
 };
 
 let mapStateToProps = (state) => ({
-
+  error: state.app.error,
 })
 
-export default connect(mapStateToProps, { getTodoListsThunk, initializedToogle })(App);
-
+export default connect(mapStateToProps, {})(App);

@@ -1,0 +1,17 @@
+.form {
+  width: 100%;
+  position: relative;
+  & input {
+    width: 100%;
+    background-color: inherit;
+    padding-right: 100px;
+  }
+}
+.addTaskBtn {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 0px;
+  & span {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.spinner {
+  animation: rotate-center 1s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite both;
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
